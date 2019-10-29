@@ -20,12 +20,23 @@ public class ApplicationUser implements AbstractEntity{
     @EqualsAndHashCode.Include
     private Long id;
 
-    @NotNull(message = "userName can't be null")
+    @NotNull(message = "username can't be null")
     @Column(nullable = false)
     private String username;
 
     @NotNull(message = "password can't be null")
     @Column(nullable = false)
+    @ToString.Exclude
     private String password;
 
+    @NotNull(message = "role can't be null")
+    @Column(nullable = false)
+    private String role = "USER";
+
+    public ApplicationUser(@NotNull ApplicationUser applicationUser) {
+        this.id = applicationUser.getId();
+        this.username = applicationUser.getUsername();
+        this.password = applicationUser.getPassword();
+        this.role = applicationUser.getRole();
+    }
 }

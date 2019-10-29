@@ -18,10 +18,12 @@
     <modules>
         <module>course</module>
         <module>core</module>
+        <module>token</module>
     </modules>
 
     <properties>
         <spring-cloud.version>Hoxton.RC1</spring-cloud.version>
+        <nimbus-jose.version>8.0</nimbus-jose.version>
     </properties>
 
     <dependencies>
@@ -91,6 +93,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose.version}</version>
         </dependency>
     </dependencies>
 

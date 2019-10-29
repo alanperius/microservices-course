@@ -4,5 +4,5 @@ import academy.devdojo.core.model.ApplicationUser;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 public interface ApplicationUserRepository extends PagingAndSortingRepository<ApplicationUser, Long> {
-    ApplicationUser findByUserName(String username);
+    ApplicationUser findByUsername(String username);
 }
