@@ -27,7 +27,7 @@
 
         <dependency>
             <groupId>com.study</groupId>
-            <artifactId>token</artifactId>
+            <artifactId>token2</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

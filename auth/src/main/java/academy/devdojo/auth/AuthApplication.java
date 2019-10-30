@@ -15,6 +15,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories({"academy.devdojo.core.repository"})
 @EnableEurekaClient
 @ComponentScan("academy.devdojo")
+
 public class AuthApplication {
 
     public static void main(String[] args) {

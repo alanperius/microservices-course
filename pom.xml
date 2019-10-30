@@ -18,7 +18,7 @@
     <modules>
         <module>course</module>
         <module>core</module>
-        <module>token</module>
+        <module>token2</module>
     </modules>
 
     <properties>
@@ -99,6 +99,11 @@
             <groupId>com.nimbusds</groupId>
             <artifactId>nimbus-jose-jwt</artifactId>
             <version>${nimbus-jose.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
         </dependency>
     </dependencies>
 
